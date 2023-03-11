@@ -1,1 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.meme {
+    padding: 20px 60px;
+}
+
+.meme__name{
+font-size: 20px;
+}
+
+.img {
+    max-width: 200px;
+    object-fit: cover;
+}
