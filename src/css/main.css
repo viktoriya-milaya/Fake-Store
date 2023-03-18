@@ -1,18 +1,141 @@
-* {
-    padding: 0;
-    margin: 0;
+/*reset*/
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-.meme {
-    padding: 20px 60px;
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
 }
 
-.meme__name{
-font-size: 20px;
+/*body*/
+
+body {
+    min-height: 100vh;
+    background: #1f1f20;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
 }
 
-.img {
-    max-width: 200px;
-    object-fit: cover;
+.center{
+    position: absolute;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
 }
+
+.wrap {
+    width: 80%;
+    max-width: 750px;
+    margin: 60px auto;
+    border-radius: 12px;
+    background: #2c2c2d;
+    box-shadow: 2px 2px 4px #1a1a1a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: darkgray;  
+
+}
+
+.header{
+    padding: 40px;
+    text-align: center;
+}
+
+.headding{
+    line-height: 140%;
+    color: cornflowerblue;
+ }
+
+.first-headding{
+    font-size: 36px;
+}
+
+.second-headding{
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.today{
+    padding: 20px 40px;
+}
+
+.today__img{
+    padding: 0 40px;}
+
+#url-img {
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.brif{
+  font-size: 12px;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 4px;
+}
+
+
+
+.today__content{
+    padding: 40px;
+}
+
+.today__data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#explanation {
+    padding: 8px 0 32px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    padding: 12px 24px;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 12px;
+}
+
+
+/*animation*/
+
+.show-elem {
+    animation: show-elem  1s ease;
+  }
+  
+  @keyframes show-elem {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+  .hide-elem {
+    animation: hide-elem 1s ease;
+  }
+  
+  @keyframes hide-elem {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  .err404{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
